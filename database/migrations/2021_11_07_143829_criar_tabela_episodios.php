@@ -22,8 +22,8 @@ class CriarTabelaEpisodios extends Migration
             $table->timestamps();
 
             $table->foreign('serie_id')
-                ->references('series')
-                ->on('id');
+                ->references('id')
+                ->on('series');
         });
     }
 
